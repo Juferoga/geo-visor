@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "esnext",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mi-visor-catastral/cadastre/domain": [
+        "libs/cadastre/domain/src/index.ts"
+      ],
+      "@mi-visor-catastral/shared/ui-common": [
+        "libs/shared/ui-common/src/index.ts"
+      ],
+      "@mi-visor-catastral/shared/util-gis": [
+        "libs/shared/util-gis/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}

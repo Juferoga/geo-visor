@@ -1,0 +1,20 @@
+{
+  "name": "cadastre-domain",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/cadastre/domain/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": ["scope:cadastre", "type:domain"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/cadastre/domain/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
